@@ -22,5 +22,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 <!-- React Basics -->
 
-
-    
+<!-- React Redux -->
+a. store: store the state data , only one store , to maintain the single source of truth.
+b. action: Funtion that is dispatch in UI , event trigger, api call (to change state)
+c. reducer: 
