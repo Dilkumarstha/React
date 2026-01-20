@@ -1,8 +1,9 @@
 import Card from "./Card";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
+const inputRef=useRef(null);
 
   // useEffect ///////////////////////////////////////////////////
 useEffect(
@@ -20,6 +21,9 @@ useEffect(
       <button onClick={() => {
         setCount(count + 1);
       }}>{count}</button>
+
+<input type="text" ref={inputRef} />
+<button onClick={()=>inputRef.current.focus()}>click</button>
 
 <h1>Testing {count}</h1>
       <Card title="samsung s24" brand="samsung" price={20000} />
