@@ -1,12 +1,16 @@
+import Nav from "../components/Nav";
 
 const PageNotFound = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.code}>404</h1>
-      <h2>Page Not Found</h2>
-      <p>The page you are looking for doesn’t exist.</p>
+    <div>
 
-      
+      <div style={styles.container}>
+        <h1 style={styles.code}>404</h1>
+        <h2>Page Not Found</h2>
+        <p>The page you are looking for doesn’t exist.</p>
+
+
+      </div>
     </div>
   );
 };

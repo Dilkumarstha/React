@@ -23,7 +23,7 @@ function App() {
   return (
 
     <div >
-      <Nav/>
+     
 
       <ComponentA numbA={count}/>
      
