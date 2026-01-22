@@ -1,18 +1,77 @@
-.card{
-    background-color: rgb(46, 61, 150);
-    border-radius: 1rem;
-    border: 1 px solid rgb(9, 24, 160);
-    margin: 1rem;
-    padding: 1rem;
+@import "tailwindcss";
+.card {
+
+ 
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add subtle hover lift effect */
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h1 {
+    
+  font-size: 1.4;
+  color:var(--secondary);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.card a {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+  /* transition: color 0.3s ease; */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card a:hover {
+  color: var(--secondary);
+
+   transform: translateY(-5px);
+  /* box-shadow: 0 12px 25px rgba(136, 132, 132, 0.12); */
+}
+
+.card .button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.card .button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Optional: make "Favourite" button toggle visually */
+.card .button.favourite {
+  background-color: var(--accent);
+  color: var(--text-dark);
+}
+
+
+.card-end{
     display: flex;
-    flex-direction: column;
-    justify-content: center;    
+    
+    justify-content: space-between;
     align-items: center;
-}   
-
-.button{
-    padding: 0.5rem;
-    background-color: rgb(201, 245, 203);
-    border-radius: 1rem;
-
+    gap: 1rem;
 }

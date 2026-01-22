@@ -12,6 +12,8 @@ import Nav from './components/Nav'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import Auth from './pages/Auth'
+import Counter from './applications/counter'
+
 
 const Router = () => {
   return (
@@ -33,7 +35,9 @@ const Router = () => {
             <Route path='login' element={<LoginPage />} />
             <Route path='register' element={<RegisterPage />} />
           </Route>
+        <Route path='counter' element={<Counter/>}/>
         </Route>
+
         <Route path="*" element={<><Nav /> <PageNotFound /></>} />
 
 
